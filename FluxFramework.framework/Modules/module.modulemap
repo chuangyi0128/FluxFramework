@@ -1,0 +1,6 @@
+framework module FluxFramework {
+  umbrella header "FluxFramework.h"
+
+  export *
+  module * { export * }
+}
