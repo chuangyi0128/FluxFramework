@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "FluxFramework"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Flux Framework & Simple Demo"
   s.description      = "Including FluxAction, FluxStore, FluxDispatcher"
   s.homepage         = "https://github.com/chuangyi0128/FluxFramework"
@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "6.0"
   s.requires_arc = true
 
-  s.public_header_files = 'FluxFramework.framework/Headers/*.h'
-  s.vendored_frameworks  = 'FluxFramework.framework'
+  s.public_header_files = 'FluxFramework/*.h'
+  s.source_files = 'FluxFramework/*.h', 'FluxFramework/*.m'
 end

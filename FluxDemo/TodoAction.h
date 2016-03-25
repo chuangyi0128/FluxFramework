@@ -6,7 +6,7 @@
 //  Copyright © 2016 SongLi. All rights reserved.
 //
 
-#import <FluxFramework/FluxFramework.h>
+#import "FluxAction.h"
 
 typedef NS_ENUM(NSInteger, TodoActionType)
 {

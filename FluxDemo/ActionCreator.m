@@ -7,7 +7,7 @@
 //
 
 #import "ActionCreator.h"
-#import <FluxFramework/FluxFramework.h>
+#import "FluxDispatcher.h"
 #import "TodoAction.h"
 
 @implementation ActionCreator

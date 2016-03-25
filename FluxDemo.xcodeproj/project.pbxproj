@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44CAB4FA1CA52F6600354E81 /* FluxAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CAB4F51CA52F6600354E81 /* FluxAction.m */; };
+		44CAB4FB1CA52F6600354E81 /* FluxDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CAB4F71CA52F6600354E81 /* FluxDispatcher.m */; };
+		44CAB4FC1CA52F6600354E81 /* FluxStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CAB4F91CA52F6600354E81 /* FluxStore.m */; };
 		44D95A0F1C8EC1F4005E7BF8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A0E1C8EC1F4005E7BF8 /* main.m */; };
 		44D95A121C8EC1F4005E7BF8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A111C8EC1F4005E7BF8 /* AppDelegate.m */; };
 		44D95A151C8EC1F4005E7BF8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A141C8EC1F4005E7BF8 /* ViewController.m */; };
 		44D95A181C8EC1F4005E7BF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D95A161C8EC1F4005E7BF8 /* Main.storyboard */; };
 		44D95A1A1C8EC1F4005E7BF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44D95A191C8EC1F4005E7BF8 /* Assets.xcassets */; };
 		44D95A1D1C8EC1F4005E7BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44D95A1B1C8EC1F4005E7BF8 /* LaunchScreen.storyboard */; };
-		44D95A251C8EC285005E7BF8 /* FluxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D95A241C8EC285005E7BF8 /* FluxFramework.framework */; };
 		44D95A281C8EC2BB005E7BF8 /* ActionCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A271C8EC2BB005E7BF8 /* ActionCreator.m */; };
 		44D95A2B1C8EC2D4005E7BF8 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A2A1C8EC2D4005E7BF8 /* Store.m */; };
 		44D95A2E1C8EC312005E7BF8 /* TodoAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 44D95A2D1C8EC312005E7BF8 /* TodoAction.m */; };
@@ -21,6 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44CAB4F41CA52F6600354E81 /* FluxAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxAction.h; sourceTree = "<group>"; };
+		44CAB4F51CA52F6600354E81 /* FluxAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxAction.m; sourceTree = "<group>"; };
+		44CAB4F61CA52F6600354E81 /* FluxDispatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxDispatcher.h; sourceTree = "<group>"; };
+		44CAB4F71CA52F6600354E81 /* FluxDispatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxDispatcher.m; sourceTree = "<group>"; };
+		44CAB4F81CA52F6600354E81 /* FluxStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FluxStore.h; sourceTree = "<group>"; };
+		44CAB4F91CA52F6600354E81 /* FluxStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FluxStore.m; sourceTree = "<group>"; };
 		44D95A0A1C8EC1F4005E7BF8 /* FluxDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FluxDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44D95A0E1C8EC1F4005E7BF8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		44D95A101C8EC1F4005E7BF8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,7 +39,6 @@
 		44D95A191C8EC1F4005E7BF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		44D95A1C1C8EC1F4005E7BF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44D95A1E1C8EC1F4005E7BF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		44D95A241C8EC285005E7BF8 /* FluxFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FluxFramework.framework; sourceTree = "<group>"; };
 		44D95A261C8EC2BB005E7BF8 /* ActionCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionCreator.h; sourceTree = "<group>"; };
 		44D95A271C8EC2BB005E7BF8 /* ActionCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionCreator.m; sourceTree = "<group>"; };
 		44D95A291C8EC2D4005E7BF8 /* Store.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
@@ -47,17 +54,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44D95A251C8EC285005E7BF8 /* FluxFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CAB4F31CA52F6600354E81 /* FluxFramework */ = {
+			isa = PBXGroup;
+			children = (
+				44CAB4F41CA52F6600354E81 /* FluxAction.h */,
+				44CAB4F51CA52F6600354E81 /* FluxAction.m */,
+				44CAB4F61CA52F6600354E81 /* FluxDispatcher.h */,
+				44CAB4F71CA52F6600354E81 /* FluxDispatcher.m */,
+				44CAB4F81CA52F6600354E81 /* FluxStore.h */,
+				44CAB4F91CA52F6600354E81 /* FluxStore.m */,
+			);
+			path = FluxFramework;
+			sourceTree = "<group>";
+		};
 		44D95A011C8EC1F4005E7BF8 = {
 			isa = PBXGroup;
 			children = (
-				44D95A241C8EC285005E7BF8 /* FluxFramework.framework */,
+				44CAB4F31CA52F6600354E81 /* FluxFramework */,
 				44D95A0C1C8EC1F4005E7BF8 /* FluxDemo */,
 				44D95A0B1C8EC1F4005E7BF8 /* Products */,
 			);
@@ -176,7 +195,10 @@
 				44D95A281C8EC2BB005E7BF8 /* ActionCreator.m in Sources */,
 				44D95A2E1C8EC312005E7BF8 /* TodoAction.m in Sources */,
 				44D95A151C8EC1F4005E7BF8 /* ViewController.m in Sources */,
+				44CAB4FB1CA52F6600354E81 /* FluxDispatcher.m in Sources */,
+				44CAB4FC1CA52F6600354E81 /* FluxStore.m in Sources */,
 				44D95A121C8EC1F4005E7BF8 /* AppDelegate.m in Sources */,
+				44CAB4FA1CA52F6600354E81 /* FluxAction.m in Sources */,
 				44D95A2B1C8EC2D4005E7BF8 /* Store.m in Sources */,
 				44D95A311C8EC49F005E7BF8 /* ListModel.m in Sources */,
 				44D95A0F1C8EC1F4005E7BF8 /* main.m in Sources */,
@@ -334,6 +356,7 @@
 				44D95A231C8EC1F4005E7BF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

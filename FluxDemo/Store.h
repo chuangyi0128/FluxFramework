@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <FluxFramework/FluxFramework.h>
+#import "FluxStore.h"
 #import "ListModel.h"
 
 

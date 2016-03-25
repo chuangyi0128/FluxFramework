@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "ActionCreator.h"
 #import "Store.h"
-#import <FluxFramework/FluxFramework.h>
+#import "FluxDispatcher.h"
 
 @interface ViewController () <StoreDelegate>
 @property (nonatomic, strong) Store *store;
@@ -17,28 +17,47 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.store = [[Store alloc] initWithIdentifier:@"id"];
+        self.store.delegate = self;
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    self.store = [[Store alloc] initWithIdentifier:@"id"];
-    [FluxDispatcher registerStore:self.store];
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
     
+    [FluxDispatcher registerStore:self.store];
+    
     if (![self.store isInitialized]) {
         [ActionCreator sendActionWithId:@"id" params:@{}];
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    
+    [FluxDispatcher unregisterStore:self.store];
 }
 
 - (void)dealloc
 {
-    [FluxDispatcher unregisterStore:self.store];
+    
+}
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 
